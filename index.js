@@ -23,4 +23,13 @@ reverseString('abaa'); // 'aaba'
 
 
 //2: Using Recursion
+const reverseString = str => {
+  if (str === '')
+    return '';
+  else 
+    return reverseString(str.substring(1)) + str.charAt(0);
+}
+reverseString('hello');  //'olleh'
 
+//2-i: Using Recursion - Ternary Operator
+const reverseString = str => (str === '') ? '' : reverseString(str.substring(1)) + str.chartAt(0);
