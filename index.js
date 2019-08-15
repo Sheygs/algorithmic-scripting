@@ -1,14 +1,15 @@
-// Convert Celsius to Fahrenheit
+/*Convert Celsius to Fahrenheit*/
 
 const convertToF = C => 9/5 * C + 32;
 convertToF(10); //50F
 
-//Reverse A String
+
+/*Reverse A String*/
 
 //1: Using built-in method
 const reverseString = str => str.split('').reverse().join('');
-
 reverseString('hello'); // 'olleh'
+
 
 //2: Using a decrement for-loop
 const reverseString = str => {
@@ -18,8 +19,8 @@ const reverseString = str => {
   }
   return newString;
 }
-
 reverseString('abaa'); // 'aaba'
 
 
-//2: Using 
+//2: Using Recursion
+
