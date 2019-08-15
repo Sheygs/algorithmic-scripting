@@ -34,3 +34,29 @@ reverseString('hello');  //'olleh'
 //2-i: Using Recursion - Ternary Operator
 const reverseString = str => (str === '') ? '' : reverseString(str.substring(1)) + str.chartAt(0);
 reverseString('apple'); // 'elppa'
+
+
+/*Factorialize a number*/
+
+//1: Using Iterative Approach
+const factorialize = num => {
+   let factorial = 1;
+   for (let i = 1; i <= num; i++){
+      factorial *= i;
+   }
+   return factorial;
+}
+factorialize(5); //120
+
+
+//2: Using Recursive Approach
+const factorialize = num => {
+  if (num < 0)
+      return "Number cannot be negative";
+  if (num === 0)
+      return 1;
+  if (num === 1)  
+      return 1;  
+  else 
+      return num * factorialize(num - 1);    
+}
