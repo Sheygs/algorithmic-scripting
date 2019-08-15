@@ -33,3 +33,4 @@ reverseString('hello');  //'olleh'
 
 //2-i: Using Recursion - Ternary Operator
 const reverseString = str => (str === '') ? '' : reverseString(str.substring(1)) + str.chartAt(0);
+reverseString('apple'); // 'elppa'
