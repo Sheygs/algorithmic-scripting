@@ -60,3 +60,4 @@ const factorialize = num => {
   else 
       return num * factorialize(num - 1);    
 }
+factorialize(6); //720
