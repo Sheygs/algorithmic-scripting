@@ -79,3 +79,4 @@ const findLongestWordLength = str => {
   }
   return longest.length;   
 }
+findLongestWordLength('Knowledge is evenly distributed');
