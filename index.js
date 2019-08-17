@@ -54,9 +54,7 @@ const factorialize = num => {
   if (num < 0)
       return "Number cannot be negative";
   if (num === 0)
-      return 1;
-  if (num === 1)  
-      return 1;  
+      return 1; 
   else 
       return num * factorialize(num - 1);    
 }
