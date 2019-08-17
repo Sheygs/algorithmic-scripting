@@ -68,15 +68,15 @@ const findLongestWordLength = str => {
   if (typeof str !== 'string')
      return 'string argument required!';
 
-  let longest = '', 
+  let maxLength = 0, 
       stringArray = str.split(' '), 
       len = stringArray.length;  
 
   for (let i = 0; i < len; i++){
-     if (stringArray[i].length > longest.length){
-        longest = stringArray[i];
+     if (stringArray[i].length > maxLength){
+        maxLength = stringArray[i].length;
      }
   }
-  return longest.length;   
+  return maxLength;   
 }
 findLongestWordLength('Knowledge is evenly distributed'); //distributed
