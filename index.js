@@ -41,7 +41,7 @@ reverseString('apple'); // 'elppa'
 //1: Using Iterative Approach
 const factorialize = num => {
    let factorial = 1;
-   for (let i = 1; i <= num; i++){
+   for (let i = num; i > 0; i--){
       factorial *= i;
    }
    return factorial;
