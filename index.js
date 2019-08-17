@@ -61,3 +61,21 @@ const factorialize = num => {
       return num * factorialize(num - 1);    
 }
 factorialize(6); //720
+
+
+/*Find The Longest Word In A String*/
+const findLongestWordLength = str => {
+  if (typeof str !== 'string')
+     return 'string argument required!';
+
+  let longest = '', 
+      stringArray = str.split(' '), 
+      len = stringArray.length;  
+
+  for (let i = 0; i < len; i++){
+     if (stringArray[i].length > longest.length){
+        longest = stringArray[i];
+     }
+  }
+  return longest.length;   
+}
