@@ -109,7 +109,7 @@ const findLongestWordLength = str => {
 
 /* Largest of Four*/
 
-//Solution 1:
+//Solution 1: Iterative Approach
 const largestOfFour = arr => {
    const newArray = [];
    let max;
@@ -124,4 +124,24 @@ const largestOfFour = arr => {
    }
    return newArray;
 
-}
+};
+
+
+//Solution 2: Declarative Approach
+const largestOfFour = arr => {
+   return arr.map(group => {
+      return group.reduce((curr,next) => {
+         return Math.max(curr,next);
+      })
+   })
+};
+
+// Declarative Approach II
+const largestOfFour = arr => {
+   return arr.map(group => {
+      return group.reduce((a,b) => {
+         return a > b ? a : b;
+      })
+   })
+};
+
