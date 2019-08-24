@@ -149,3 +149,19 @@ const largestOfFour = arr => {
 const confirmTheEnding = (str,target) => str.slice(str.length - target.length) === target;
 confirmTheEnding('Connor', 'n'); //false
 
+
+/*Repeat a String*/
+
+//1. Using Built-In Methhod
+const repeatStringNumTimes = (str,num) => (num > 0) ? str.repeat(num) : '';
+
+//2. Using Iterative Approach
+const  repeatStringNumTimes = (str,num) => {
+   if (num <= 0) return '';
+   let word = '';
+   for (let i = 0; i < num; i++){
+      word+=str;
+   }
+   return word;
+}
+
