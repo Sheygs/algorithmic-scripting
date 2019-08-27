@@ -224,3 +224,10 @@ const frankenSplice = (array1, array2, n) => {
 }
 frankenSplice([1, 2], ["a", "b"], 1) //returns ["a", 1, 2, "b"]
 frankenSplice([1, 2, 3], [4, 5], 1) //returns [4, 1, 2, 3, 5]
+
+/* 
+Falsy Bouncer
+Removes all falsy values from an array
+*/
+const falsyBouncer = arr => arr.filter(el => Boolean(el));
+falsyBouncer([1, null, NaN, 2, undefined]) //returns [1, 2]
