@@ -184,3 +184,11 @@ const findElement = (arr,func) => {
    return arr.find(isEven);
 }
 findElement([2,4,6,8],num => num % 2 === 0); //2
+findElement([1,3,5,8, 10],num => num % 2 === 0); //8
+
+/* Boo Who */
+const booWho = bool => typeof bool === 'boolean';
+booWho(true); //true
+booWho(false); //true
+booWho([]);  //false
+booWho({"a" : 1}); //false
