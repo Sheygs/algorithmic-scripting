@@ -176,3 +176,11 @@ truncateString('A-',1)   //A...
 //Solution 2
 const truncateString = (str,num) =>
       (str.length > num) ? str.slice(0,num).padEnd(num + 3,'...') : str;
+
+
+/* Find Elements*/
+const findElement = (arr,func) => {
+   const isEven = num => num % 2 === 0;
+   return arr.find(isEven);
+}
+findElement([2,4,6,8],num => num % 2 === 0); //2
