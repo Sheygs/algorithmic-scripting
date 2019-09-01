@@ -235,7 +235,7 @@ falsyBouncer([1, null, NaN, 2, undefined]) //returns [1, 2]
 
 /* Where do I Belong */
 
-
+//Solution 1.
 const getIndexToIns = (arr,num) => {
    //push to array
    arr.push(num);
@@ -245,7 +245,12 @@ const getIndexToIns = (arr,num) => {
    return arr.indexOf(num);
 }
 
-
+//Solution 2
+const getIndexToIns = (arr,num) => {
+   const index = arr.sort((x,y) => x - y)
+                    .findIndex(i => num <= i);
+     return index === -1 ? arr.length: index;               
+}
 
 /* Mutation */
 
