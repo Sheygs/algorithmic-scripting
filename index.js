@@ -236,6 +236,17 @@ falsyBouncer([1, null, NaN, 2, undefined]) //returns [1, 2]
 /* Where do I Belong */
 
 
+const getIndexToIns = (arr,num) => {
+   //push to array
+   arr.push(num);
+   //sort 
+   arr.sort((a,b) => a -b);
+   //return index of num
+   return arr.indexOf(num);
+}
+
+
+
 /* Mutation */
 
 //Using Iterative Approach
