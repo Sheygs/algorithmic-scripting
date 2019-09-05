@@ -301,3 +301,22 @@ const chunkyArrayInGroups = (arr,size) => {
    }
    return list;
 }
+
+/* Intermediate Algorithmic Scripting */
+
+//Sum All Numbers In A Range
+const sumAll = arr => {
+   if (!Array.isArray(arr)){
+      return `Array argument required `;
+   }
+   if (typeof arr[0] !== 'number' || typeof arr[1] !== 'number'){
+      return `Array values must all be numbers`;
+   }
+   let min = Math.min(arr[0], arr[1]),
+       max = Math.max(arr[0], arr[1]),
+       sum = 0;
+   for (let i = min; i <= max; i++){
+      sum+=i;
+   }
+   return sum;
+}
