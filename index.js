@@ -329,3 +329,12 @@ const sumAll = arr => {
    }
    return sum;
 }
+
+//Solution 3:
+const sumAll = arr => {
+   let sorted = arr.sort((x,y) => x - y );
+   let [num1,num2] = sorted;
+   //Arithmetic Progression sum
+   let sum = (num2 - num1 + 1) * (num1 + num2)/2;
+   return sum;
+}
