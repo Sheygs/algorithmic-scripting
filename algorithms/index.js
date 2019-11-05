@@ -339,6 +339,16 @@ const sumAll = arr => {
    return sum;
 }
 
+//Difference of Two Arrays
+const diffArray = (arr1, arr2) => {
+   //concat both arrays
+   //Apply set to get non-duplicate numbers {returns object}
+   //convert from object to array
+   //return the element not present in EITHER of the arrays but NOT both
+   return Array.from(new Set(arr1.concat(arr2)))
+               .filter(el => !arr1.includes(el) || !arr2.includes(el));
+}
+
 //Seek And Destroy
 const destroyer = (arr,...list) => arr.filter(elt => !list.includes(elt));
 //destroyer([1,2,3,5,1,2,3],2,3) returns [1,5,1]
