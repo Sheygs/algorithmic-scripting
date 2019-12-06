@@ -1,4 +1,4 @@
-# JS Algorithms
+# JavaScript Algorithms
 
 A way to become a great developer could be tied to how you are able to solve algorithmic questions :muscle:
 This Repository contains solutions to popular JavaScript Algorithm Questions.
