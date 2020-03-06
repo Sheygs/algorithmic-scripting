@@ -1,8 +1,6 @@
 /* Largest of Four*/
 
-/*
-  For simplicity, the provided array will contain exactly 4 sub-arrays.
-*/
+/* For simplicity, the provided array will contain exactly 4 sub-arrays */
 
 // Solution 1: Iterative Approach
 const largestOfFour = arr => {

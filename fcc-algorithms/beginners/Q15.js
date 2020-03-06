@@ -1,6 +1,6 @@
 /* Mutation */
 
-//Using Iterative Approach
+// Using Iterative Approach
 const mutation = arr => {
   if (!Array.isArray(arr)){
      return 'Input must be in an array';
@@ -19,7 +19,7 @@ const mutation = arr => {
   return true;
 }
 
-//Using Declarative Approach
+// Using Declarative Approach
 const mutation = arr => {
   return arr[1].toLowerCase().split('').every(letter => {
     return arr[0].toLowerCase().indexOf(letter) != -1;
