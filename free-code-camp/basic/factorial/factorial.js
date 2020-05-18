@@ -1,6 +1,6 @@
-/*Factorialize a number*/
+/* Factorialize a number */
 
-//1: Using Iterative Approach
+// 1: Using Iterative Approach
 const factorialize = num => {
   let factorial = 1;
   for (let i = num; i > 0; i--){
@@ -8,7 +8,7 @@ const factorialize = num => {
   }
   return factorial;
 }
-factorialize(5); //120
+factorialize(5); 
 
 
 //2: Using Recursive Approach
@@ -20,4 +20,4 @@ const factorialize = num => {
  else 
      return num * factorialize(num - 1);    
 }
-factorialize(6); //720
+factorialize(6); 

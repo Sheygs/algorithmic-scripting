@@ -1,8 +1,6 @@
-/* Largest of Four*/
-
-/* For simplicity, the provided array will contain exactly 4 sub-arrays */
 
 // Solution 1: Iterative Approach
+
 const largestOfFour = arr => {
   const newArray = [];
   let max;
@@ -20,7 +18,8 @@ const largestOfFour = arr => {
 };
 
 
-//Solution 2: Declarative Approach
+// Solution 2: Declarative Approach
+
 const largestOfFour = arr => {
   return arr.map(group => {
      return group.reduce((curr,next) => {

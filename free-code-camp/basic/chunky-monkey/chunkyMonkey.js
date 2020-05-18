@@ -1,5 +1,3 @@
-/* Chunky Array In Groups */
-
 // Solution 1
 const chunkyArrayInGroups = (arr,size) => {
   const newArray = [];

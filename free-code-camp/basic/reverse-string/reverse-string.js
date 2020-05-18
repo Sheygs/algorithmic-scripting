@@ -1,10 +1,10 @@
-/*Reverse A String*/
+/* Reverse A String */
 
 // Solution 1
 const reverseString = str => str.split('').reverse().join('');
 reverseString('hello'); // 'olleh'
 
-//Solution 2
+// Solution 2
 const reverseString = str => {
   let newString = '', len = str.length;
   for (let i = str.length - 1; i >= 0; i--){
@@ -15,7 +15,7 @@ const reverseString = str => {
 reverseString('abaa'); // 'aaba'
 
 
-//3: Using Recursion
+// Solution 3: Recursion
 const reverseString = str => {
   if (str === '')
     return '';
@@ -24,6 +24,6 @@ const reverseString = str => {
 }
 reverseString('hello');  //'olleh'
 
-//4: Using Recursion - Ternary Operator
+// Solution 4: Recursion (Ternary)
 const reverseString = str => (str === '') ? '' : reverseString(str.substring(1)) + str.chartAt(0);
 reverseString('apple'); // 'elppa'
