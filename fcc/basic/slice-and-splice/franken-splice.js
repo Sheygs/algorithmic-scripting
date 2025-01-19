@@ -1,6 +1,6 @@
 // copy the contents of an array1 to array2 in order
 
-const frankenSplice = (array1, array2, n) => {
+const frankenSplice = (array1 = [], array2 = [], n) => {
   // creates new copies of each array
   // to prevent mutation of the old arrays
 

@@ -4,11 +4,10 @@ Given two numbers `X` and `Y`, write a function that returns even numbers btw `X
 
 Example:
 
-```
-Input: 12,2
-Output: [10, 8, 6, 4, 2]
+```js
+Input: 12, 2;
+Output: [10, 8, 6, 4, 2];
 
-Input: 2,12
-Output: [3, 5, 7, 9, 11]
-
+Input: 2, 12;
+Output: [3, 5, 7, 9, 11];
 ```

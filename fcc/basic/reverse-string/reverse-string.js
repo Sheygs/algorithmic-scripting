@@ -1,14 +1,17 @@
 // Solution 1
 const reverseString = (str) => str.split('').reverse().join('');
+
 reverseString('hello'); // 'olleh'
 
 // Solution 2
-const reverseString2 = (str) => {
+const reverseString2 = (str = '') => {
   let newString = '',
     len = str.length;
-  for (let i = str.length - 1; i >= 0; i--) {
+
+  for (let i = len - 1; i >= 0; i--) {
     newString += str[i];
   }
+
   return newString;
 };
 

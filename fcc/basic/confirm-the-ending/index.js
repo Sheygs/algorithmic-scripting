@@ -1,4 +1,4 @@
-const confirmTheEnding = (str = '', target) =>
+const confirmTheEnding = (str = '', target = '') =>
   str.slice(str.length - target.length) === target;
 
 confirmTheEnding('Connor', 'n');

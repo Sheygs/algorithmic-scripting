@@ -4,8 +4,8 @@ const mutation = (arr = []) => {
     return 'Input of type `array` required';
   }
 
-  if ((typeof arr[0] && typeof arr[1]) != 'string') {
-    return 'Array content must be strings';
+  if ((typeof arr[0] && typeof arr[1]) !== 'string') {
+    return "array content must be of type 'strings'";
   }
 
   const word1 = arr[0].toLowerCase();

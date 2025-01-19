@@ -1,4 +1,4 @@
-// Solution 1
+// solution 1
 
 const titleCase = (sentence = '') => {
   const wordArray = sentence.toLowerCase().trim().split(' ');
@@ -9,7 +9,7 @@ const titleCase = (sentence = '') => {
     .join(' ');
 };
 
-// Solution 2
+// solution 2
 
 const titleCase2 = (sentence = '') => {
   const wordArray = sentence.toLowerCase().trim().split(' ');
