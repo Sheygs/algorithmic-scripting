@@ -1,5 +1,5 @@
 // Solution 1
-const chunkyArrayInGroups = (arr, size) => {
+const chunkyArrayInGroups = (arr = [], size) => {
   const newArray = [];
   let i = 0;
   while (i < arr.length) {
@@ -10,7 +10,7 @@ const chunkyArrayInGroups = (arr, size) => {
 };
 
 // Solution 2
-const chunkyArrayInGroups2 = (arr, size) => {
+const chunkyArrayInGroups2 = (arr = [], size) => {
   const list = [];
   while (arr.length) {
     list.push(arr.splice(0, size));

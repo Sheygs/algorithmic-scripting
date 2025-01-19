@@ -1,11 +1,13 @@
-// Using Iterative Approach
-const mutation = (arr) => {
+// iterative Approach
+const mutation = (arr = []) => {
   if (!Array.isArray(arr)) {
-    return 'Input must be in an array';
+    return 'Input of type `array` required';
   }
+
   if ((typeof arr[0] && typeof arr[1]) != 'string') {
     return 'Array content must be strings';
   }
+
   const word1 = arr[0].toLowerCase();
   const word2 = arr[1].toLowerCase();
 
@@ -14,11 +16,12 @@ const mutation = (arr) => {
       return false;
     }
   }
+
   return true;
 };
 
-// Using Declarative Approach
-const mutation2 = (arr) => {
+// declarative Approach
+const mutation2 = (arr = []) => {
   return arr[1]
     .toLowerCase()
     .split('')

@@ -6,7 +6,7 @@ This challenge can be solved with the .endsWith() method, which was introduced i
 
 Your code should **not** use the built-in method `.endsWith()` to solve the challenge.
 
-```
+```js
 confirmEnding("Bastian", "n") should return true.
 confirmEnding("Congratulation", "on") should return true.
 confirmEnding("Connor", "n") should return false.

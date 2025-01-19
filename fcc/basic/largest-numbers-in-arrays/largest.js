@@ -1,4 +1,4 @@
-// Solution 1: Iterative Approach
+// iterative Approach
 
 const largestOfFour = (arr) => {
   const newArray = [];
@@ -15,7 +15,7 @@ const largestOfFour = (arr) => {
   return newArray;
 };
 
-// Solution 2: Declarative Approach
+// declarative Approach
 
 const largestOfFour2 = (arr) => {
   return arr.map((group) => {

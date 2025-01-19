@@ -1,4 +1,4 @@
-const findElement = (arr, func) => {
+const findElement = (arr = [], func) => {
   const isEven = (num) => num % 2 === 0;
   return arr.find(isEven);
 };

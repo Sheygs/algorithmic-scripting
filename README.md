@@ -1,3 +1,3 @@
 ## Data Structures and Algorithms
 
-> Data Structures and Algorithms in Python and Go to Solidify language skills
+> Data Structures & Algorithms to solidify language skills in Python and Go

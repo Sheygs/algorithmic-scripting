@@ -1,4 +1,4 @@
-// 1: Using Iterative Approach
+// 1: Iterative Approach
 const factorialize = (num) => {
   let factorial = 1;
   for (let i = num; i > 0; i--) {
@@ -8,7 +8,7 @@ const factorialize = (num) => {
 };
 factorialize(5);
 
-// 2: Using Recursive Approach
+// 2: Recursive Approach
 const factorialize2 = (num) => {
   if (num < 0) return 'Number cannot be negative';
   if (num === 0) return 1;

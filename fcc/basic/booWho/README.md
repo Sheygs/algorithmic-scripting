@@ -1,8 +1,8 @@
 ## BooWho
 
-Check if a value is classified as a boolean primitive. Return true or false. Boolean primitives are true and false.
+Check if a value is classified as a boolean primitive. Return `true` or `false`. Boolean primitives are `true` and `false`.
 
-```
+```js
 booWho(true) should return true.
 booWho(false) should return true.
 booWho([1, 2, 3]) should return false.

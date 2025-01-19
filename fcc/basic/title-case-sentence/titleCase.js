@@ -1,6 +1,6 @@
 // Solution 1
 
-const titleCase = (sentence) => {
+const titleCase = (sentence = '') => {
   const wordArray = sentence.toLowerCase().trim().split(' ');
   return wordArray
     .map((el) => {
@@ -11,7 +11,7 @@ const titleCase = (sentence) => {
 
 // Solution 2
 
-const titleCase2 = (sentence) => {
+const titleCase2 = (sentence = '') => {
   const wordArray = sentence.toLowerCase().trim().split(' ');
   return wordArray
     .map((el) => {

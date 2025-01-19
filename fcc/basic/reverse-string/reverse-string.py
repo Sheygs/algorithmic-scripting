@@ -1,6 +1,5 @@
 # reverse a string
 
-
 def reverse_string(str='freeCodeCamp is the best'):
     # length = len(str)
     reverse = str[::-1]
